@@ -20,7 +20,7 @@ public class LoginPage {
 
 	// ====================== WebElements ===========================
 
-	@FindBy(className = "login") // find by annnotationn is used by PageFactory
+	@FindBy(className = "login") // find by annnotation is used by PageFactory
 	WebElement Loginlink;
 
 	@FindBy(name = "user_login")

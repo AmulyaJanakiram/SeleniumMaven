@@ -2,13 +2,19 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
+    <parameter name="Param2" value="Cts-1982"/>
+    <parameter name="Param1" value="amulya.janakiram@gmail.com"/>
     <classes>
       <class name="testcases.LoginTest">
         <methods>
           <include name="LoginFailure"/>
           <include name="LoginSuccess"/>
-          <include name="tearDown"/>
+          <include name="ExternalDataTest"/>
+          <include name="Parameterized"/>
           <include name="SetUp"/>
+          <include name="tearDown"/>
+          <include name="DataTearDow"/>
+          <include name="DataSetUp"/>
         </methods>
       </class> <!-- testcases.LoginTest -->
     </classes>
