@@ -10,7 +10,7 @@
           <include name="LoginFailure"/>
           <include name="LoginSuccess"/>
           <include name="ExternalDataTest"/>
-          <include name="Parameterized"/>
+          <include name="Parameterized" invocation-numbers="0"/>
           <include name="SetUp"/>
           <include name="tearDown"/>
           <include name="DataTearDow"/>

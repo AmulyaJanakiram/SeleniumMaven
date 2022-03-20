@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Preparation') {
             steps {
-                git 'https://github.com/nicks204/TestNg_MavenFeb22.git' 
+                git 'https://github.com/AmulyaJanakiram/SeleniumMaven.git' 
             }
         }
         stage('Build') {
