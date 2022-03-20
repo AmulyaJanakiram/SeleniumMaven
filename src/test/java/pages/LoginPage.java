@@ -1,11 +1,9 @@
 package pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
 
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -19,8 +17,8 @@ public class LoginPage {
 	ExtentTest test = BaseClass.test;
 
 	// ====================== WebElements ===========================
-
-	@FindBy(className = "login") // find by annnotation is used by PageFactory
+	// find by annnotation is used by PageFactory
+	@FindBy(className = "login")
 	WebElement Loginlink;
 
 	@FindBy(name = "user_login")
@@ -59,8 +57,8 @@ public class LoginPage {
 
 	public void UIChech() {
 
-		WebElement UserName = driver.findElement(By.name("user_login"));
-		Assert.assertTrue(UserName.isDisplayed());
+		// WebElement UserName = driver.findElement(By.name("user_login"));
+		// Assert.assertTrue(UserName.isDisplayed());
 
 	}
 }
